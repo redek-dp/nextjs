@@ -1,13 +1,13 @@
-module.exports = {
-  assetPrefix: './',
-  basePath: '/nextjs',
-  trailingSlash: true,
-}
-
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  output: "export",  // <=== habilita o export estático
-  reactStrictMode: true,
-};
+    output: 'export',
+
+    distDir: 'dist',
+    images: {
+        unoptimized: true,
+    },
+}
 
 module.exports = nextConfig;
